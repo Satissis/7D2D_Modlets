@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<!-- ********** Perk Changes ********** -->
+	<!-- Add Super Seeds to 'Living Of The Land' perk lvl 4 -->
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='4,5']/@tags">,Super Potato (Seed),Mutated Mushroom Spore (Seed)</append>
+</configs>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

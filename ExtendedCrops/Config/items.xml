@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<!--set xpath="/items/item[@name='foodCropGraceCorn']/property[@name='CustomIconTint']/@value">98e700</set-->
+
+<append xpath="/items">
+	<!-- item name="foodCropGraceCorn">
+		<property name="CustomIcon" value="foodCropCorn"/> <property name="CustomIconTint" value="ff9f9f"/>
+		<property name="DisplayType" value="food"/>
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="MresourceCrop"/>
+		<property name="Stacknumber" value="500"/>
+		<property name="EconomicValue" value="40"/>
+		<property name="EconomicBundleSize" value="5"/>
+		<property name="CraftingIngredientTime" value="5"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Use_time" value="..."/>
+			<property name="Sound_start" value="player_eating"/>
+		</property>
+		<property name="Group" value="Food/Cooking"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+		</effect_group>
+	</item -->
+
+	<!-- ********** Super Crops ********** -->
+	<item name="Super Potato">
+		<property name="CustomIcon" value="foodCropPotato"/> <property name="CustomIconTint" value="ff9f9f"/>
+		<property name="HoldType" value="31"/>
+		<property name="DisplayType" value="food"/>
+		<property name="DescriptionKey" value="foodCropPotatoDesc"/>
+		<!--<property name="DescriptionKey" value="These looks like a normal potatoes but larger and have more like a sweet potato color to them.\nMaybe they can be eaten crafted into seeds or used in recipes at the campfire?\nHmm maybe they are some kind of Super Potatoes ?!?."/>-->
+		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="MresourceCrop"/>
+		<property name="Stacknumber" value="500"/>
+		<property name="EconomicValue" value="7500"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="CraftingIngredientTime" value="10"/>
+		<property name="SellableToTrader" value="false"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Use_time" value="..."/>
+			<property name="Sound_start" value="player_eating"/>
+		</property>
+		<property name="Group" value="Food/Cooking"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+		</effect_group>
+	</item>
+
+	<item name="Mutated Mushrooms">
+		<property name="CustomIcon" value="foodCropMushrooms"/> <property name="CustomIconTint" value="98e700"/>
+		<property name="HoldType" value="31"/>
+		<property name="DisplayType" value="food"/>
+		<property name="DescriptionKey" value="foodCropMushroomsDesc"/>
+		<!--property name="DescriptionKey" value="These looks like some kind of mutated mushroom and the green color makes you wonder if they are eatable?!?\nThey smells really tasty though so maybe they can be eaten crafted into seeds or used in recipes at the campfire?\nDo you dare give it a try?"/-->
+		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="MresourceCrop"/>
+		<property name="Stacknumber" value="500"/>
+		<property name="EconomicValue" value="7500"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="CraftingIngredientTime" value="5"/>
+		<property name="SellableToTrader" value="false"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Use_time" value="..."/>
+			<property name="Sound_start" value="player_eating"/>
+		</property>
+		<property name="Group" value="Food/Cooking"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+		</effect_group>
+	</item>
+
+</append>
+</configs>

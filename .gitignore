@@ -1,41 +1,25 @@
-# Compiled Lua sources
-luac.out
+.project
+*~
+*.gitattributes
+*.idea
+*.iml
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+# Folders
+Farming/
+Firearms-1.2-master/
+S420_SimpleUI-Compass/
+S420_SimpleUI-LeftHUD/
+S420_SimpleUI-Toolbelt/
+ExtendedCrops/temp/
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# Precompiled Headers
-*.gch
-*.pch
+# Folder config file
+Desktop.ini
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+# Satis
