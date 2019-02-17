@@ -5,12 +5,11 @@
 *.iml
 
 # Folders
-Farming/
-Firearms-1.2-master/
-S420_SimpleUI-Compass/
-S420_SimpleUI-LeftHUD/
-S420_SimpleUI-Toolbelt/
-ExtendedCrops/temp/
+*Farming*/
+*Firearms*/
+*S420_SimpleUI-Compass*/
+*S420_SimpleUI-LeftHUD*/
+*S420_SimpleUI-Toolbelt*/
 
 # Windows image file caches
 Thumbs.db
