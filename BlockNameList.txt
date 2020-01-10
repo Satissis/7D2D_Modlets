@@ -1,0 +1,37 @@
+=================================================
+Doors + Door Frames:
+=================================================
+Doors:
+-------------------------------------------------
+houseFrontDoor1_v1		- House Front Door 1
+houseFrontDoor2_v1		- House Front Door 2
+commercialDoor1_v1		- Commercial Door 1
+commercialDoor2_v1		- Commercial Door 2
+commercialDoor4_v1		- Commercial Door 4
+
+-------------------------------------------------
+Door Frames:
+-------------------------------------------------
+doorFrameWhite1			- Door Frame White 1
+doorFrameWhite2			- Door Frame White 2
+doorFrameMetal1			- Door Frame Metal 1
+doorFrameMetal2			- Door Frame Metal 2
+
+
+=================================================
+Lights:
+=================================================
+	<block name="ceilingLight01_player">
+		<property name="Class" value="PoweredLight"/>
+		<property name="Extends" value="porchLight01"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,generatorbankSchematic"/>
+		<property name="CustomIcon" value="ceilingLight01"/>
+		<property name="RuntimeSwitch" value="true"/>
+		<property name="Material" value="Mglass"/>
+		<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+		<property name="Model" value="Entities/Lighting/player_ceilingLight01Prefab"/> <property name="HandleFace" value="Top"/>
+		<property name="TakeDelay" value="5"/>
+	</block>
+

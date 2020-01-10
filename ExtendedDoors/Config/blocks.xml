@@ -1,0 +1,270 @@
+<configs>
+	<append xpath="/blocks">
+
+		<!-- ********** Extended Doors ********** -->
+
+		<!-- Doors without Brass Drop -->
+
+		<block name="Commercial Door 1">
+			<property name="DescriptionKey" value="doorGroupDesc"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="CustomIcon" value="commercialDoor1_v1"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Tags" value="door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="Place" value="Door"/> <!-- build restriction -->
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Model" value="Entities/Doors/commercial_door_1_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="9"/>
+			<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+			<property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+			<property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+			<property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+			<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
+			<property name="OpenSound" value="open_door_metal"/>
+			<property name="CloseSound" value="close_door_metal"/>
+			<property class="RepairItems"> <property name="resourceForgedIron" value="2"/> </property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="commercialDoor1_v2_noBrass"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomUpgradeSound" value="place_block_wood"/>
+			<drop event="Harvest" name="resourceScrapIron" count="8" prob="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="fdecor,fdoors"/>
+			<property name="SortOrder1" value="7060"/>
+			<property name="SortOrder2" value="0200"/> <!-- SortDoors -->
+		</block>
+
+		<block name="commercialDoor1_v2_noBrass">
+			<property name="Extends" value="Commercial Door 1"/>
+			<property name="CustomIcon" value="commercialDoor1_v2"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="Texture" value="241"/>
+			<property name="Model" value="Entities/Doors/commercial_door_1_v2Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="commercialDoor1_v3_noBrass"/>
+				<property name="Item" value="resourceScrapIron"/>
+				<property name="ItemCount" value="20"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomUpgradeSound" value="place_block_metal"/>
+			<property name="DowngradeBlock" value="Commercial Door 1"/>
+			<property class="RepairItems"> <property name="resourceWood" value="3"/> </property>
+			<drop event="Harvest" name="resourceWood" count="2" prob="1" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="0" prob="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder2" value="0205"/> <!-- SortDoors -->
+		</block>
+
+		<block name="commercialDoor1_v3_noBrass">
+			<property name="DescriptionKey" value="doorGroupDesc"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="CustomIcon" value="commercialDoor1_v3"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Tags" value="door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="Place" value="Door"/> <!-- build restriction -->
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Model" value="Entities/Doors/commercial_door_1_v3Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="9"/>
+			<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+			<property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+			<property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+			<property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+			<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
+			<property name="OpenSound" value="open_door_metal"/>
+			<property name="CloseSound" value="close_door_metal"/>
+			<property name="DowngradeBlock" value="commercialDoor1_v2_noBrass"/>
+			<property class="RepairItems"> <property name="resourceScrapIron" value="20"/> </property>
+			<drop event="Harvest" name="resourceScrapIron" count="8" prob="1" tag="allHarvest"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="fdecor,fdoors"/>
+			<property name="SortOrder1" value="7060"/>
+			<property name="SortOrder2" value="0210"/> <!-- SortDoors -->
+		</block>
+
+		<block name="Commercial Door 2">
+			<property name="Extends" value="Commercial Door 1"/>
+			<property name="CustomIcon" value="commercialDoor2_v1"/>
+			<property name="Model" value="Entities/Doors/commercial_door_2_v1Prefab"/>
+			<property class="UpgradeBlock"> <property name="ToBlock" value="commercialDoor2_v2_noBrass"/> </property>
+			<property name="SortOrder2" value="0220"/> <!-- SortDoors -->
+		</block>
+
+		<block name="commercialDoor2_v2_noBrass">
+			<property name="Extends" value="commercialDoor1_v2_noBrass"/>
+			<property name="CustomIcon" value="commercialDoor2_v2"/>
+			<property name="Model" value="Entities/Doors/commercial_door_2_v2Prefab"/>
+			<property class="UpgradeBlock"> <property name="ToBlock" value="commercialDoor2_v3_noBrass"/> </property>
+			<property name="DowngradeBlock" value="Commercial Door 2"/>
+			<property name="SortOrder2" value="0225"/> <!-- SortDoors -->
+		</block>
+
+		<block name="commercialDoor2_v3_noBrass">
+			<property name="Extends" value="commercialDoor1_v3_noBrass"/>
+			<property name="CustomIcon" value="commercialDoor2_v3"/>
+			<property name="Model" value="Entities/Doors/commercial_door_2_v3Prefab"/>
+			<property name="DowngradeBlock" value="commercialDoor2_v2_noBrass"/>
+			<property name="SortOrder2" value="0230"/> <!-- SortDoors -->
+		</block>
+
+		<block name="Commercial Door 4">
+			<property name="Extends" value="Commercial Door 1"/>
+			<property name="CustomIcon" value="commercialDoor4_v1"/>
+			<property name="Model" value="Entities/Doors/commercial_door_4_v1Prefab"/>
+			<property class="UpgradeBlock"> <property name="ToBlock" value="commercialDoor4_v2_noBrass"/> </property>
+			<property name="SortOrder2" value="0260"/> <!-- SortDoors -->
+		</block>
+
+		<block name="commercialDoor4_v2_noBrass">
+			<property name="Extends" value="commercialDoor1_v2_noBrass"/>
+			<property name="CustomIcon" value="commercialDoor4_v2"/>
+			<property name="Model" value="Entities/Doors/commercial_door_4_v2Prefab"/>
+			<property class="UpgradeBlock"> <property name="ToBlock" value="commercialDoor4_v3_noBrass"/> </property>
+			<property name="DowngradeBlock" value="Commercial Door 4"/>
+			<property name="SortOrder2" value="0265"/> <!-- SortDoors -->
+		</block>
+
+		<block name="commercialDoor4_v3_noBrass">
+			<property name="Extends" value="commercialDoor1_v3_noBrass"/>
+			<property name="CustomIcon" value="commercialDoor4_v3"/>
+			<property name="Model" value="Entities/Doors/commercial_door_4_v3Prefab"/>
+			<property name="DowngradeBlock" value="commercialDoor4_v2_noBrass"/>
+			<property name="SortOrder2" value="0270"/> <!-- SortDoors -->
+		</block>
+
+		<block name="House Front Door 1">
+			<property name="DescriptionKey" value="doorGroupDesc"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="CustomIcon" value="houseFrontDoor1_v1"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Doors/house_frontDoor1_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+			<property name="Tags" value="door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="Place" value="Door"/> <!-- build restriction -->
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+			<property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+			<property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+			<property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+			<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<property class="RepairItems"> <property name="resourceWood" value="3"/> </property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="houseFrontDoor1_v2_noBrass"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomUpgradeSound" value="place_block_wood"/>
+			<drop event="Harvest" name="resourceWood" count="2" prob="1" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="fdecor,fdoors"/>
+			<property name="SortOrder1" value="7060"/>
+			<property name="SortOrder2" value="0140"/> <!-- SortDoors -->
+		</block>
+
+		<block name="houseFrontDoor1_v2_noBrass">
+			<property name="Extends" value="House Front Door 1"/>
+			<property name="CustomIcon" value="houseFrontDoor1_v2"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="Texture" value="241"/>
+			<property name="Model" value="Entities/Doors/house_frontDoor1_v2Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="houseFrontDoor1_v3_noBrass"/>
+				<property name="Item" value="resourceScrapIron"/>
+				<property name="ItemCount" value="20"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomUpgradeSound" value="place_block_metal"/>
+			<property name="DowngradeBlock" value="House Front Door 1"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder2" value="0145"/> <!-- SortDoors -->
+		</block>
+
+		<block name="houseFrontDoor1_v3_noBrass">
+			<property name="Extends" value="commercialDoor1_v3_noBrass"/>
+			<property name="CustomIcon" value="houseFrontDoor1_v3"/>
+			<property name="Texture" value="241"/>
+			<property name="Model" value="Entities/Doors/house_frontDoor1_v3Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<property name="DowngradeBlock" value="houseFrontDoor1_v2_noBrass"/>
+			<property name="SortOrder2" value="0150"/> <!-- SortDoors -->
+		</block>
+
+		<block name="House Front Door 2">
+			<property name="Extends" value="House Front Door 1"/>
+			<property name="CustomIcon" value="houseFrontDoor2_v1"/>
+			<property name="Model" value="Entities/Doors/house_frontDoor2_v1Prefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="70"/>
+			<property class="UpgradeBlock"> <property name="ToBlock" value="houseFrontDoor2_v2_noBrass"/> </property>
+			<property name="SortOrder2" value="0160"/> <!-- SortDoors -->
+		</block>
+
+		<block name="houseFrontDoor2_v2_noBrass">
+			<property name="Extends" value="houseFrontDoor1_v2_noBrass"/>
+			<property name="CustomIcon" value="houseFrontDoor2_v2"/>
+			<property name="Model" value="Entities/Doors/house_frontDoor2_v2Prefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="70"/>
+			<property class="UpgradeBlock"> <property name="ToBlock" value="houseFrontDoor2_v3_noBrass"/> </property>
+			<property name="DowngradeBlock" value="House Front Door 2"/>
+			<property name="SortOrder2" value="0165"/> <!-- SortDoors -->
+		</block>
+
+		<block name="houseFrontDoor2_v3_noBrass">
+			<property name="Extends" value="houseFrontDoor1_v3_noBrass"/>
+			<property name="CustomIcon" value="houseFrontDoor2_v3"/>
+			<property name="Model" value="Entities/Doors/house_frontDoor2_v3Prefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="70"/>
+			<property name="DowngradeBlock" value="houseFrontDoor2_v2_noBrass"/>
+			<property name="SortOrder2" value="0170"/> <!-- SortDoors -->
+		</block>
+
+
+		<!-- ********** Extended Doors & Trims Helper Block ********** -->
+
+		<block name="Extended Doors">
+			<property name="Extends" value="House Front Door 1"/>
+			<property name="CustomIcon" value="houseFrontDoor1_v1"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="House Front Door 1,House Front Door 2,Commercial Door 1,Commercial Door 2,Commercial Door 4,doorFrameWhite1,doorFrameWhite2,doorFrameMetal1,doorFrameMetal2,doorTrimTop,doorTrim2m"/>
+		</block>
+
+	</append>
+</configs>
