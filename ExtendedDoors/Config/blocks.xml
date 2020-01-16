@@ -39,7 +39,7 @@
 			</property>
 			<property name="CustomUpgradeSound" value="place_block_wood"/>
 			<drop event="Harvest" name="resourceScrapIron" count="8" prob="1" tag="allHarvest"/>
-			<drop event="Destroy" count="0"/>
+			<drop event="Destroy" name="Extended Doors" count="1" tag="allHarvest"/>
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 			<property name="Group" value="Building,advBuilding"/>
 			<property name="FilterTags" value="fdecor,fdoors"/>
@@ -65,7 +65,7 @@
 			<property class="RepairItems"> <property name="resourceWood" value="3"/> </property>
 			<drop event="Harvest" name="resourceWood" count="2" prob="1" tag="allHarvest"/>
 			<drop event="Harvest" name="resourceScrapIron" count="0" prob="1" tag="allHarvest"/>
-			<drop event="Destroy" count="0"/>
+			<drop event="Destroy" name="Extended Doors" count="0" tag="allHarvest"/>
 			<property name="SortOrder2" value="0205"/> <!-- SortDoors -->
 		</block>
 
@@ -187,6 +187,7 @@
 				<property name="UpgradeHitCount" value="4"/>
 			</property>
 			<property name="CustomUpgradeSound" value="place_block_wood"/>
+			<drop event="Destroy" name="Extended Doors" count="1" tag="allHarvest"/>
 			<drop event="Harvest" name="resourceWood" count="2" prob="1" tag="allHarvest"/>
 			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 			<property name="FilterTags" value="fdecor,fdoors"/>
@@ -209,7 +210,7 @@
 			</property>
 			<property name="CustomUpgradeSound" value="place_block_metal"/>
 			<property name="DowngradeBlock" value="House Front Door 1"/>
-			<drop event="Destroy" count="0"/>
+			<drop event="Destroy" name="Extended Doors" count="0" tag="allHarvest"/>
 			<property name="SortOrder2" value="0145"/> <!-- SortDoors -->
 		</block>
 
@@ -253,6 +254,69 @@
 			<property name="SortOrder2" value="0170"/> <!-- SortDoors -->
 		</block>
 
+		<block name="Door Frame White 1">
+			<property name="Extends" value="doorFrameWhite1"/>
+			<property name="CustomIcon" value="doorFrameWhite1"/>
+			<property class="UpgradeBlock">	<property name="ToBlock" value="Door Frame White Boarded 1"/> </property>
+			<drop event="Destroy" name="Extended Doors" count="1" tag="allHarvest"/>
+		</block>
+
+		<block name="Door Frame White Boarded 1">
+			<property name="Extends" value="doorFrameWhiteBoarded1" param1="DowngradeBlock"/>
+			<property name="DowngradeBlock" value="Door Frame White 1"/>
+			<property name="CustomIcon" value="doorFrameWhiteBoarded1"/>
+		</block>
+
+		<block name="Door Frame White 2">
+			<property name="Extends" value="doorFrameWhite2"/>
+			<property name="CustomIcon" value="doorFrameWhite2"/>
+			<property class="UpgradeBlock">	<property name="ToBlock" value="Door Frame White Boarded 2"/> </property>
+			<drop event="Destroy" name="Extended Doors" count="1" tag="allHarvest"/>
+		</block>
+
+		<block name="Door Frame White Boarded 2">
+			<property name="Extends" value="doorFrameWhiteBoarded2" param1="DowngradeBlock"/>
+			<property name="DowngradeBlock" value="Door Frame White 2"/>
+			<property name="CustomIcon" value="doorFrameWhiteBoarded2"/>
+		</block>
+
+		<block name="Door Frame Metal 1">
+			<property name="Extends" value="doorFrameMetal1"/>
+			<property name="CustomIcon" value="doorFrameMetal1"/>
+			<property class="UpgradeBlock">	<property name="ToBlock" value="Door Frame Metal Boarded 1"/> </property>
+			<drop event="Destroy" name="Extended Doors" count="1" tag="allHarvest"/>
+		</block>
+
+		<block name="Door Frame Metal Boarded 1">
+			<property name="Extends" value="doorFrameMetalBoarded1" param1="DowngradeBlock"/>
+			<property name="DowngradeBlock" value="Door Frame Metal 1"/>
+			<property name="CustomIcon" value="doorFrameMetalBoarded1"/>
+		</block>
+
+		<block name="Door Frame Metal 2">
+			<property name="Extends" value="doorFrameMetal2"/>
+			<property name="CustomIcon" value="doorFrameMetal2"/>
+			<property class="UpgradeBlock">	<property name="ToBlock" value="Door Frame Metal Boarded 2"/> </property>
+			<drop event="Destroy" name="Extended Doors" count="1" tag="allHarvest"/>
+		</block>
+
+		<block name="Door Frame Metal Boarded 2">
+			<property name="Extends" value="doorFrameMetalBoarded2" param1="DowngradeBlock"/>
+			<property name="DowngradeBlock" value="Door Frame Metal 2"/>
+			<property name="CustomIcon" value="doorFrameMetalBoarded2"/>
+		</block>
+
+		<block name="Door Trim Top">
+			<property name="Extends" value="doorTrimTop"/>
+			<property name="CustomIcon" value="doorTrimTop"/>
+			<drop event="Destroy" name="Extended Doors" count="1" tag="allHarvest"/>
+		</block>
+
+		<block name="Door Trim 2m">
+			<property name="Extends" value="doorTrim2m"/>
+			<property name="CustomIcon" value="doorTrim2m"/>
+			<drop event="Destroy" name="Extended Doors" count="1" tag="allHarvest"/>
+		</block>
 
 		<!-- ********** Extended Doors & Trims Helper Block ********** -->
 
@@ -263,7 +327,7 @@
 			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
 			<property name="SelectAlternates" value="true" />
-			<property name="PlaceAltBlockValue" value="House Front Door 1,House Front Door 2,Commercial Door 1,Commercial Door 2,Commercial Door 4,doorFrameWhite1,doorFrameWhite2,doorFrameMetal1,doorFrameMetal2,doorTrimTop,doorTrim2m"/>
+			<property name="PlaceAltBlockValue" value="House Front Door 1,House Front Door 2,Commercial Door 1,Commercial Door 2,Commercial Door 4,Door Frame White 1,Door Frame White 2,Door Frame Metal 1,Door Frame Metal 2,Door Trim Top,Door Trim 2m"/>
 		</block>
 
 	</append>
