@@ -23,8 +23,8 @@
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 			<property name="TakeDelay" value="5"/>
 			<property name="EconomicValue" value="150"/> <!-- disassemble value -->
-			<property name="RequiredPower" value="3"/>
 			<property name="SortOrder1" value="70s0"/>
+			<property name="RequiredPower" value="2"/>
 		</block>
 
 		<block name="Street Light">
@@ -45,11 +45,11 @@
 			<drop event="Harvest" name="resourceElectricParts" count="5,10" tag="salvageHarvest"/>
 			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-			<property name="RequiredPower" value="15"/>
 			<property name="TakeDelay" value="5"/>
 			<property name="Group" value="Science"/>
 			<property name="FilterTags" value="fdecor,felectrical"/>
 			<property name="SortOrder1" value="70a0"/>
+			<property name="RequiredPower" value="7"/>
 		</block>
 
 		<block name="Street Light Classic">
@@ -69,8 +69,8 @@
 			<property name="IsTerrainDecoration" value="true"/>
 			<drop event="Harvest" name="resourceElectricParts" count="4,6" tag="salvageHarvest"/>
 			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
-			<property name="RequiredPower" value="10"/>
 			<property name="TakeDelay" value="5"/>
+			<property name="RequiredPower" value="7"/>
 		</block>
 
 		<block name="Road Barricade Light">
@@ -85,6 +85,7 @@
 			<property name="Model" value="Entities/Signs/barricadePrefab"/>
 			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
 			<drop event="Destroy" name="resourceScrapIron" count="3,12"/>
+			<property name="RequiredPower" value="3"/>
 		</block>
 
 		<block name="Old Outdoor Light">
@@ -92,6 +93,7 @@
 			<property name="CustomIcon" value="porchLight01"/>
 			<property name="Model" value="Entities/Lighting/porchLight01Prefab"/>
 			<property name="HandleFace" value="West"/>
+			<property name="RequiredPower" value="3"/>
 		</block>
 
 		<block name="Warehouse Outdoor Light">
@@ -99,6 +101,7 @@
 			<property name="CustomIcon" value="wallLight01"/>
 			<property name="Model" value="Entities/Lighting/wall_light01Prefab"/>
 			<property name="HandleFace" value="South"/>
+			<property name="RequiredPower" value="3"/>
 		</block>
 
 		<block name="Iron Outdoor Light">
@@ -117,6 +120,7 @@
 			<property name="Extends" value="ceilingLight01_player" param1="UnlockedBy"/>
 			<property name="CustomIcon" value="industrialLight02Red"/>
 			<property name="Model" value="Entities/Lighting/industrial_light_02_redPrefab"/>
+			<property name="RequiredPower" value="3"/>
 		</block>
 
 		<block name="Silver Dome Light">
@@ -165,12 +169,14 @@
 			<property name="Extends" value="Red Industrial Light" param1="HandleFace"/>
 			<property name="CustomIcon" value="deskLampLight"/>
 			<property name="Model" value="Entities/Lighting/desk_lampPrefab"/>
+			<property name="RequiredPower" value="2"/>
 		</block>
 
 		<block name="Table Lamp">
 			<property name="Extends" value="Red Industrial Light" param1="HandleFace"/>
 			<property name="CustomIcon" value="tableLampLight"/>
 			<property name="Model" value="Entities/Lighting/table_lampPrefab"/>
+			<property name="RequiredPower" value="2"/>
 		</block>
 
 		<block name="Ceiling Fan Light">
@@ -184,6 +190,7 @@
 			<property name="Extends" value="Warehouse Outdoor Light"/>
 			<property name="CustomIcon" value="signExitLight"/>
 			<property name="Model" value="Entities/Lighting/exit_signPrefab"/>
+			<property name="RequiredPower" value="2"/>
 		</block>
 
 		<block name="End Table Lamp">
@@ -192,18 +199,30 @@
 			<property name="Path" value="solid"/>
 			<property name="Model" value="Entities/Lighting/end_table_lightPrefab"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="RequiredPower" value="2"/>
 		</block>
 
 		<block name="X-Ray Display Light 1">
 			<property name="Extends" value="Warehouse Outdoor Light"/>
 			<property name="CustomIcon" value="xRayDisplayLight1"/>
 			<property name="Model" value="Entities/Lighting/xray_displayPrefab"/>
+			<property name="RequiredPower" value="1"/>
 		</block>
 
 		<block name="X-Ray Display Light 2">
 			<property name="Extends" value="Warehouse Outdoor Light"/>
 			<property name="CustomIcon" value="xRayDisplayLight2"/>
 			<property name="Model" value="Entities/Lighting/xray_display_2Prefab"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+
+		<block name="Work Light">
+			<property name="Extends" value="Old Outdoor Light" param1="HandleFace"/>
+			<property name="CustomIcon" value="workLightPOI"/>
+			<property name="Model" value="Entities/Lighting/work_lightPrefab"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
 		</block>
 
 
@@ -216,7 +235,7 @@
 			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
 			<property name="SelectAlternates" value="true" />
-			<property name="PlaceAltBlockValue" value="Old Outdoor Light,Iron Outdoor Light,Brass Outdoor Light,Red Industrial Light,Silver Dome Light,Brass Dome Light,Warehouse Ceiling Light,Silver Glass Light,Brass Glass Light,Warehouse Outdoor Light,Street Light,Street Light Classic,Sconce Light,Sconce Light Shadows,Desk Lamp,Table Lamp,Ceiling Fan Light,Exit Sign,End Table Lamp,X-Ray Display Light 1,X-Ray Display Light 2,Road Barricade Light,Shop Sign Open,ceilingLight07_player,corrugatedMetalPillar0.025CTR"/>
+			<property name="PlaceAltBlockValue" value="Old Outdoor Light,Iron Outdoor Light,Brass Outdoor Light,Red Industrial Light,Silver Dome Light,Brass Dome Light,Warehouse Ceiling Light,Silver Glass Light,Brass Glass Light,Warehouse Outdoor Light,Street Light,Street Light Classic,Sconce Light,Sconce Light Shadows,Desk Lamp,Table Lamp,Ceiling Fan Light,Exit Sign,End Table Lamp,X-Ray Display Light 1,X-Ray Display Light 2,Road Barricade Light,Shop Sign Open,ceilingLight07_player,Work Light,corrugatedMetalPillar0.025CTR"/>
 		</block>
 	</append>
 </configs>
