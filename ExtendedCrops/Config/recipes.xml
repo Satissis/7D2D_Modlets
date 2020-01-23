@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
-<append xpath="/recipes">
+	<append xpath="/recipes">
 
-<!-- ********** Super Seeds ********** -->
-<recipe name="Super Potato (Seed)" count="1" craft_time="1" tags="learnable">
-	<ingredient name="Super Potato" count="4"/>
-</recipe>
+		<!-- ********** Super Seeds ********** -->
+		<recipe name="Super Potato (Seed)" count="1" craft_time="1" tags="learnable">
+			<ingredient name="Super Potato" count="5"/>
+		</recipe>
 
-<recipe name="Mutated Mushroom Spore (Seed)" count="1" craft_time="1" tags="learnable">
-	<ingredient name="Mutated Mushrooms" count="4"/>
-	<ingredient name="resourceClayLump" count="2"/>
-</recipe>
+		<!-- ********** Mutated Seeds ********** -->
+		<recipe name="Mutated Mushroom Spore (Seed)" count="1" craft_time="1" tags="learnable">
+			<ingredient name="Mutated Mushrooms" count="5"/>
+			<ingredient name="resourceClayLump" count="2"/>
+		</recipe>
 
-<!-- ********** Super Foods ********** -->
+		<!-- ********** Super Foods ********** -->
 
-</append>
+	</append>
 </configs>
