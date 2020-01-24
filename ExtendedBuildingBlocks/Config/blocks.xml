@@ -1,0 +1,217 @@
+<configs>
+	<append xpath="/blocks">
+
+		<!-- ********** Extended Building Blocks ********** -->
+		<!-- *********** Unlocks 178 POI Blocks *********** -->
+
+		<!-- ***************************************** -->
+		<!-- ********** Slope Blocks Helper ********** -->
+		<!-- ***************************************** -->
+
+		<block name="Extended Wood Slope Blocks"> <!-- 33 Blocks Added -->
+			<property name="Extends" value="woodBlock"/>
+			<property name="CustomIcon" value="woodHalfRampStairs50Filler"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="woodHalfRampStairs50Filler,woodWedgeTipHalf1,woodWedgeTipHalf2,woodInclineTipHalf1,woodInclineTipHalf2,woodHalfCentered,woodHalfRampStairs50,woodHalfCNRInside2,woodRampInclineHalf1,woodRampInclineHalf2,woodRampInclineInsideCNR,woodRampInclineInsideCNRFiller,woodRampInclineFiller,woodRampInclineFillerHalf1,woodRampInclineFillerHalf2,woodGable,woodGablehalf,woodGable1m,woodGable1mhalf,woodGable3Quarter,woodGable3quarterhalf,woodGableInvertedRampHalf,woodGableInvertedQuarter,woodGableInvertedQuarterHalf,woodGableInvertedSteep,woodGableInvertedSteepHalf,woodGablePyramid,woodWedgeInclineCornerTop,woodWedgeNarrowTip,woodWedgeNarrowLow,woodWedgeNarrowMid,woodWedgeNarrowHigh,woodPyramid1m"/>
+		</block>
+
+		<block name="Extended Brick Slope Blocks"> <!-- 11 Blocks Added -->
+			<property name="Extends" value="brickBlock"/>
+			<property name="CustomIcon" value="brickHalfRampStairs50Filler"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="brickHalfRampStairs50Filler,brickHalfCentered,brickHalfRampStairs50,brickHalfCNRInside2,brickGable1m,brickWedgeInclineCornerTop,brickWedgeNarrowTip,brickWedgeNarrowLow,brickWedgeNarrowMid,brickWedgeNarrowHigh,brickPyramid1m"/>
+		</block>
+
+		<block name="Extended Iron Slope Blocks"> <!-- 25 Blocks Added -->
+			<property name="Extends" value="corrugatedMetalBlock"/>
+			<property name="CustomIcon" value="corrugatedMetalHalfRampStairs50Filler"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="corrugatedMetalHalfRampStairs50Filler,corrugatedMetalWedgeTipHalf1,corrugatedMetalWedgeTipHalf2,corrugatedMetalInclineTipHalf1,corrugatedMetalInclineTipHalf2,corrugatedMetalCNRIncline,corrugatedMetalRampInclineHalf1,corrugatedMetalRampInclineHalf2,corrugatedMetalRampInclineInsideCNR,corrugatedMetalRampInclineInsideCNRFiller,corrugatedRampInclineFiller,corrugatedMetalRampInclineFillerHalf1,corrugatedMetalRampInclineFillerHalf2,corrugatedMetalGable,corrugatedMetalGableHalf,corrugatedMetalGableQuarterHalf,corrugatedMetalGable1m,corrugatedMetalGable1mHalf,corrugatedMetalGable3QuarterHalf,corrugatedMetalGableInvertedRampHalf,corrugatedMetalGableInvertedQuarterHalf,corrugatedMetalWedgeNarrowTip,corrugatedMetalWedgeNarrowLow,corrugatedMetalWedgeNarrowMid,corrugatedMetalWedgeNarrowHigh"/>
+		</block>
+
+		<block name="Extended Concrete Slope Blocks"> <!-- 11 Blocks Added -->
+			<property name="Extends" value="concreteBlock"/>
+			<property name="CustomIcon" value="concreteHalfRampStairs50Filler"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="concreteHalfRampStairs50Filler,concreteHalfCentered,concreteHalfRampStairs50,concreteHalfCNRInside2,concreteGable1m,concreteWedgeInclineCornerTop,concreteWedgeNarrowTip,concreteWedgeNarrowLow,concreteWedgeNarrowMid,concreteWedgeNarrowHigh,concretePyramid1m"/>
+		</block>
+
+		<!-- **************************************** -->
+		<!-- ********** Arch Blocks Helper ********** -->
+		<!-- **************************************** -->
+
+		<block name="Extended Flagstone Arch Blocks"> <!-- 3 Blocks Added -->
+			<property name="Extends" value="flagstoneBlock"/>
+			<property name="CustomIcon" value="flagstoneArch3m_center"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="flagstoneArch3m,flagstoneArch3m_center,flagstoneArch3m_tip"/>
+		</block>
+
+		<block name="Extended Brick Arch Blocks"> <!-- 15 Blocks Added -->
+			<property name="Extends" value="brickBlock"/>
+			<property name="CustomIcon" value="brickTunnelCorner"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="brickTunnelCorner,brickTunnelCenter,brickTubeCenter,brickTubeCorner,brickArchCurveTop,brickArchCurveMiddle,brickArchCurveFiller,brickArchCurveBase,brickArchCurveWall,brickArchCurveWallCap,brickArchCurveTopMiddle,brickArchCurveTopMiddleTopper,brickWindowCircle,brickWindowCircleCorner,brickWindowArchTop"/>
+		</block>
+
+		<block name="Extended Iron Arch Blocks"> <!-- 4 Blocks Added -->
+			<property name="Extends" value="corrugatedMetalBlock"/>
+			<property name="CustomIcon" value="corrugatedMetalTunnelCorner"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="corrugatedMetalTunnelCorner,corrugatedMetalTunnelCenter,corrugatedMetalTubeCenter,corrugatedMetalTubeCorner"/>
+		</block>
+
+		<block name="Extended Concrete Arch Blocks"> <!-- 4 Blocks Added -->
+			<property name="Extends" value="concreteBlock"/>
+			<property name="CustomIcon" value="concreteTunnelCorner"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="concreteTunnelCorner,concreteTunnelCenter,concreteTubeCenter,concreteTubeCorner"/>
+		</block>
+
+		<!-- ****************************************** -->
+		<!-- ********** Window Blocks Helper ********** -->
+		<!-- ****************************************** -->
+
+		<block name="Extended Wood Window Blocks"> <!-- 3 Blocks Added -->
+			<property name="Extends" value="woodBlock"/>
+			<property name="CustomIcon" value="woodWindowArch3MCNR"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="woodWindowArch3MCNR,woodWindowArch3MCTR,woodWindowArch3MTip"/>
+		</block>
+
+		<block name="Extended Brick Window Blocks"> <!-- 3 Blocks Added -->
+			<property name="Extends" value="brickBlock"/>
+			<property name="CustomIcon" value="brickWindowArch3MCNR"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="brickWindowArch3MCNR,brickWindowArch3MCTR,brickWindowArch3MTip"/>
+		</block>
+
+		<block name="Extended Concrete Window Blocks"> <!-- 3 Blocks Added -->
+			<property name="Extends" value="concreteBlock"/>
+			<property name="CustomIcon" value="concreteWindowArch3MCNR"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="concreteWindowArch3MCNR,concreteWindowArch3MCTR,concreteWindowArch3MTip"/>
+		</block>
+
+		<!-- ***************************************** -->
+		<!-- ********** Decor Blocks Helper ********** -->
+		<!-- ***************************************** -->
+
+		<block name="Extended Wood Decor Blocks"> <!-- 10 Blocks Added -->
+			<property name="Extends" value="woodBlock"/>
+			<property name="CustomIcon" value="woodBlockBaseboard4"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="woodBlockBaseboard4,woodBlockBaseboard1,woodBlockBaseboardChairRail1,woodBlockBaseboardChairRail4,modularFireWoodStackA,modularFireWoodStackB,modularFireWoodStackC,mirror,woodCrown,woodCrownInsideCorner"/>
+		</block>
+
+		<block name="Extended Brick Decor Blocks"> <!-- 4 Blocks Added -->
+			<property name="Extends" value="brickBlock"/>
+			<property name="CustomIcon" value="brickBlockBaseboard4"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="brickBlockBaseboard4,brickBlockBaseboard1,brickBlockBaseboardChairRail1,brickBlockBaseboardChairRail4"/>
+		</block>
+
+		<block name="Extended Large Iron Decor Blocks"> <!-- 1 Blocks Added -->
+			<property name="Extends" value="corrugatedMetalBlock"/>
+			<property name="CustomIcon" value="crushedCars"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="crushedCars"/>
+		</block>
+
+		<block name="Extended Concrete Decor Blocks"> <!-- 12 Blocks Added -->
+			<property name="Extends" value="concreteBlock"/>
+			<property name="CustomIcon" value="concreteBarrier1"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="concreteBarrier1,concreteBarrier2,concreteBarrier3,concreteBlockBaseboard1,concreteBlockBaseboard4,concreteBlockBaseboardChairRail1,concreteBlockBaseboardChairRail4,cinderBlocks01,cinderBlocks02,cinderBlocks03,sidewalkCurb,sidewalkCNRCurb"/>
+		</block>
+
+		<!-- ***************************************************** -->
+		<!-- ********** Destruction Decor Blocks Helper ********** -->
+		<!-- ***************************************************** -->
+
+		<block name="Extended Wood Destruction Decor Blocks"> <!-- 22 Blocks Added -->
+			<property name="Extends" value="woodBlock"/>
+			<property name="CustomIcon" value="woodDestroyed05"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="woodDestroyed05,woodDestroyed06,woodDestroyed07,burntWoodBlock1,burntWoodBlock2,burntWoodBlock3,burntWoodBlock4,burntWoodBlock5,burntWoodBlock6,burntWoodRamp7,burntWoodRoof,burntWoodWedge7,woodWallStudBroken,woodDebris01,woodDebris02,woodDebris03,looseBoardsTrapBlock3x3Destroyed,terrDestroyedWoodDebris,emberPileDeco1,emberPileDeco2,emberPileDeco3,emberPileDeco4"/>
+		</block>
+
+		<block name="Extended Brick Destruction Decor Blocks"> <!-- 4 Blocks Added -->
+			<property name="Extends" value="brickBlock"/>
+			<property name="CustomIcon" value="brickDestroyedBlock01"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="brickDestroyedBlock01,brickDestroyedBlock02,brickDestroyedBlock03,terrDestroyedStone"/>
+		</block>
+
+		<block name="Extended Iron Destruction Decor Blocks"> <!-- 3 Blocks Added -->
+			<property name="Extends" value="corrugatedMetalBlock"/>
+			<property name="CustomIcon" value="rebarDestroyed"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="rebarDestroyed,iBeamBent,scrapMetalPile"/>
+		</block>
+
+		<block name="Extended Concrete Destruction Decor Blocks"> <!-- 7 Blocks Added -->
+			<property name="Extends" value="concreteBlock"/>
+			<property name="CustomIcon" value="concreteDestroyed01"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="concreteDestroyed01,concreteDestroyed02,concreteDestroyed03,concreteDestroyed04,concreteDestroyed05,concreteDestroyed06,concreteDestroyed07"/>
+		</block>
+	</append>
+</configs>
