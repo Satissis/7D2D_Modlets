@@ -5,6 +5,8 @@
 *.iml
 
 # Folders
+*EasyGame*/
+*None Active Mods*/
 *Farming*/
 *Firearms*/
 *S420_SimpleUI-Compass*/
@@ -24,3 +26,6 @@ $RECYCLE.BIN/
 # Satis
 BlockNameList.txt
 Expanded_Decorative_Vedui42_1.1.zip
+
+# ExtendedCrops
+ExtendedCropsCookingRecipes.png
