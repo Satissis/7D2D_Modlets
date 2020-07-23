@@ -1,0 +1,115 @@
+<!-- 
+Here is a template XML format for xpath for A17+ 
+
+This XML file has to be named the same as its vanilla file. If you are editing items.xml, this file needs to be called items.xml
+
+Here are some example xpath:
+	Changes the Light value to 0.45
+  	<set xpath="/items/item[@name='meleeToolTorch']/property[@name='LightValue']/@value">0.45</set>
+	
+	Adds in a new torch at the bottom of the items.xml
+	<append xpath="/items" >
+		<item name="AnothermeleeToolTorch">
+			<property name="Extends" value="meleeToolTorch"/>
+			<property name="LightValue" value="1" />
+		</item>
+	</append>
+	
+	Deletes the torch.
+	<remove xpath="/items/item[@name='meleeToolTorch']" />
+	
+-->
+<configs>
+	<append xpath="/recipes" >	
+
+	<recipe name="Expanded_KitchenFurniture" count="1" craft_area="workbench">
+		<ingredient name="resourceForgedIron" count="3"/>
+		<ingredient name="resourceElectricParts" count="3"/>
+		<ingredient name="resourceMechanicalParts" count="1"/>
+		<ingredient name="casinoCoin" count="100"/>
+	</recipe>
+	
+	<recipe name="Expanded_HomeFurniture" count="1" craft_area="workbench">
+		<ingredient name="resourceForgedIron" count="3"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceScrapPolymers" count="3"/>
+		<ingredient name="casinoCoin" count="100"/>
+	</recipe>
+	
+		<recipe name="Expanded_Construction" count="1" craft_area="workbench">
+		<ingredient name="resourceForgedIron" count="3"/>
+		<ingredient name="resourceScrapPolymers" count="3"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceRockSmall" count="10"/>
+		<ingredient name="casinoCoin" count="100"/>
+	</recipe>
+	
+		<recipe name="Expanded_Technology" count="1" craft_area="workbench">
+		<ingredient name="resourceForgedIron" count="5"/>
+		<ingredient name="resourceScrapPolymers" count="5"/>
+		<ingredient name="resourceMechanicalParts" count="1"/>
+		<ingredient name="resourceElectricParts" count="5"/>
+		<ingredient name="casinoCoin" count="200"/>
+	</recipe>
+	
+	<!-- ********** Expanded_Lights Helper Recipe ********** -->
+
+		<recipe name="Expanded_Lights" count="1" craft_area="workbench" tags="workbenchCrafting,perkAdvancedEngineering">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="casinoCoin" count="50"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+
+			<!-- ********** Expanded_Doors & Trims Helper Recipe ********** -->
+
+		<recipe name="Expanded_Doors" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceWood" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="casinoCoin" count="25"/>
+		</recipe>
+
+		
+			<!-- ****************************************************** -->
+		<!-- ********** General Helper Recipes ********** -->
+		<!-- ****************************************************** -->
+
+		<recipe name="Expanded_Wood_Blocks" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+
+		<recipe name="Expanded_Flagstone_Blocks" count="1" craft_area="workbench">
+			<ingredient name="resourceCobblestones" count="4"/>
+		</recipe>
+		
+		
+		<recipe name="Expanded_Brick_Blocks" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_stone" count="12"/>
+			<ingredient name="unit_clay" count="75"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_stone,unit_clay"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="Expanded_Iron_Blocks" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="24"/>
+			<ingredient name="unit_clay" count="12"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron,unit_clay"/>
+			</effect_group>
+		</recipe>
+
+		<recipe name="Expanded_Concrete_Blocks" count="1" craft_area="workbench">
+			<ingredient name="pouredConcreteBlockVariantHelper" count="1"/>
+		</recipe>
+		
+		
+		
+		
+	</append>
+
+</configs>
