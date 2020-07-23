@@ -22,55 +22,81 @@ Here are some example xpath:
 	
 -->
 <configs>
-<append xpath="/blocks">
+	<append xpath="/blocks">
+		<!-- ********** Table Saw ********** -->
+		<block name="EDV_tableSaw">
+			<property name="Extends" value="cementMixer" param1="DescriptionKey,CraftSound,CraftCompleteSound"/>
+			<property name="CustomIcon" value="tableSaw"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Model" value="Entities/Crafting/table_sawPrefab"/>
+			<property name="DescriptionKey" value="EDV_tableSawDesc"/>
 
-<block name="Expanded_KitchenFurniture">
-	<property name="Extends" value="cntRetroFridgeVer1Closed"/>
-	<property name="CustomIcon" value="cntRetroFridgeVer1Closed"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="DescriptionKey" value="metalFurnitureBlockVariantHelperDesc"/>
-	<property name="ItemTypeIcon" value="all_blocks"/>
-	<property name="SelectAlternates" value="true" />
-	<property name="PlaceAltBlockValue" value="cntRetroFridgeVer1Closed,cntFridgeStainlessSteel,cntIceMachine,utilitySink,wallHungSink,cntWashingMachine,cntWasherClosed,cntDryerClosed,cntLaundryBasketVer1Empty,cntTrashCompactor,cntMedicineCabinetOpen,cntGasGrillOpen,cntCharcoalGrillOpen,cntWoodBurningStove,cntMicrowaveOvenVer1Open,cntToaster,cntCoffeeMaker,cntCoffeeMakerCommercial,cntTiltTruckEmpty,cntSodaFountain,cntWallOven,cntGraniteSink"/>
-	<property name="Group" value="Decor/Miscellaneous"/>
-</block>
+			<property class="Workstation">
+				<property name="Modules" value="output"/>
+				<property name="CraftingAreaRecipes" value="edvtablesaw"/>
+			</property>
 
-<block name="Expanded_HomeFurniture">
-	<property name="Extends" value="decoPoolTable"/>
-	<property name="CustomIcon" value="decoPoolTable"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="DescriptionKey" value="metalFurnitureBlockVariantHelperDesc"/>
-	<property name="ItemTypeIcon" value="all_blocks"/>
-	<property name="SelectAlternates" value="true" />
-	<property name="PlaceAltBlockValue" value="decoPoolTable,cntMedicineCabinetOpen,schoolDesk,decoStationaryBike,decoTreadmill,decoBasketBallHoop,decoSwingSet,decoMetalSlide,decoLargePetCage,decoReptileTerrarium,gurneyBed,hospitalBed,decoComputerDeskTopPC,decoComputerMonitorKeyboardMousePC,decoComputerMonitorKeyboardMouse,decoComputerMonitor,decoBenchPress,decoWeightBar,decoClawFootBathTub,cntBathTubEmpty,cntRollingToolBoxClosed,cntToolBoxClosed,cntUtilityCartFull,cntJanitorCartFull,cntSuitcase,cntLuggageMediumClosed,ceilingFanLight,deskLampLight,tableLampLight,workLightPOI,chandelierLight,candelabraLight,cntCupboardCabinetRedTopClosed,cntLaundryBasketVer2Full,schoolDesk,barracksChair,cntWaterCoolerFull,cntWaterCoolerBottle"/>
-	<property name="Group" value="Decor/Miscellaneous"/>
-</block>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="15"/>
+				<property name="resourceMechanicalParts" value="12"/>
+				<property name="resourceElectricParts" value="2"/>
+			</property>
 
+			<property name="UnlockedBy" value="EDV_tableSawSchematic"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_table_saw"/>
+			<property name="CraftActionName" value="lblContextActionCraft"/>
+			<property name="CraftIcon" value="ui_game_symbol_table_saw"/>
+			<property name="OpenSound" value="open_workbench"/>
+			<property name="CloseSound" value="close_workbench"/>
+			<property name="WorkstationJournalTip" value="EDV_tableSawTip"/>
+			<property name="WorkstationWindow" value="workstation_workbench"/>
 
-<block name="Expanded_Construction">
-	<property name="Extends" value="cntGasPump"/>
-	<property name="CustomIcon" value="cntGasPump"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="DescriptionKey" value="metalFurnitureBlockVariantHelperDesc"/>
-	<property name="ItemTypeIcon" value="all_blocks"/>
-	<property name="SelectAlternates" value="true" />
-	<property name="PlaceAltBlockValue" value="cntGasPump,metalPipeCorner,metalPipeJoint,metalPipeFlange,metalPipeCap,pipeSmall1x1,pipeSmall1x3,pipeSmallCap,pipeSmallJoint,pipeSmallValve,pipeSmallCorner,heatVent,heatVentIndustrial,birdBathPlanter,decoHoistChain,decoHoistSpreader,decoHoistHook,decoHoistMagnet,decoHoistTopMount,decoHandTruck,palletWhiteBagsBase,palletWhiteBagsTile,palletWhiteBagsTop,palletWhiteBagsPartial1,palletWhiteBagsPartial2,palletWhiteBagsLoose,palletBrownBoxesBase,palletBrownBoxesTile,palletBrownBoxesTop,palletBrownBoxesLoose,palletBricksBase,palletBricksTile,palletBricksTop,palletBricksPartial1,palletBricksPartial2,palletBricksLoose,palletBlueTarpBase,palletBlueTarpTile,palletCompressedCardboard,palletEmpty,palletEmptyStack"/>
-	<property name="Group" value="Decor/Miscellaneous"/>
-</block>
+			<property name="TakeDelay" value="15"/>
+			<property name="EconomicValue" value="2500"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="70i0"/>
+		</block>
 
-<block name="Expanded_Technology">
-	<property name="Extends" value="controlPanelTop05"/>
-	<property name="CustomIcon" value="controlPanelTop05"/>
-	<property name="CreativeMode" value="Player"/>
-	<property name="DescriptionKey" value="metalFurnitureBlockVariantHelperDesc"/>
-	<property name="ItemTypeIcon" value="all_blocks"/>
-	<property name="SelectAlternates" value="true" />
-	<property name="PlaceAltBlockValue" value="controlPanelTop05,controlPanelBase01,controlPanelBase02,controlPanelBase03,controlPanelBase04,controlPanelBase05,controlPanelBase06,controlPanelTop01,controlPanelTop02,controlPanelTop03,controlPanelTop04,controlPanelTop06,controlPanelTop07,controlPanelCorner,controlPanelBase07,controlPanelBase08,airConditioner,airConditionVentFan,airConditionVentFanDouble,satelliteDish,satelliteDishSmall,xRayDisplayLight1,xRayDisplayLight2,hospitalBed,gurneyBed"/>
-	<property name="Group" value="Decor/Miscellaneous"/>
-</block>
+		<!-- ********** Extended Blocks ********** -->
 
 
-<!-- ********** Extended Light Blocks ********** -->
+		<block name="Expanded_HomeFurniture">
+			<property name="Extends" value="decoPoolTable"/>
+			<property name="CustomIcon" value="decoPoolTable"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="metalFurnitureBlockVariantHelperDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="decoPoolTable,cntMedicineCabinetOpen,schoolDesk,decoStationaryBike,decoTreadmill,decoBasketBallHoop,decoSwingSet,decoMetalSlide,decoLargePetCage,decoReptileTerrarium,gurneyBed,hospitalBed,decoComputerDeskTopPC,decoComputerMonitorKeyboardMousePC,decoComputerMonitorKeyboardMouse,decoComputerMonitor,decoBenchPress,decoWeightBar,decoClawFootBathTub,cntBathTubEmpty,cntRollingToolBoxClosed,cntToolBoxClosed,cntUtilityCartFull,cntJanitorCartFull,cntSuitcase,cntLuggageMediumClosed,ceilingFanLight,deskLampLight,tableLampLight,workLightPOI,chandelierLight,candelabraLight,cntCupboardCabinetRedTopClosed,cntLaundryBasketVer2Full,schoolDesk,barracksChair,cntWaterCoolerFull,cntWaterCoolerBottle"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+		</block>
+
+
+		<block name="Expanded_Construction">
+			<property name="Extends" value="cntGasPump"/>
+			<property name="CustomIcon" value="cntGasPump"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="metalFurnitureBlockVariantHelperDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="cntGasPump,metalPipeCorner,metalPipeJoint,metalPipeFlange,metalPipeCap,pipeSmall1x1,pipeSmall1x3,pipeSmallCap,pipeSmallJoint,pipeSmallValve,pipeSmallCorner,heatVent,heatVentIndustrial,birdBathPlanter,decoHoistChain,decoHoistSpreader,decoHoistHook,decoHoistMagnet,decoHoistTopMount,decoHandTruck,palletWhiteBagsBase,palletWhiteBagsTile,palletWhiteBagsTop,palletWhiteBagsPartial1,palletWhiteBagsPartial2,palletWhiteBagsLoose,palletBrownBoxesBase,palletBrownBoxesTile,palletBrownBoxesTop,palletBrownBoxesLoose,palletBricksBase,palletBricksTile,palletBricksTop,palletBricksPartial1,palletBricksPartial2,palletBricksLoose,palletBlueTarpBase,palletBlueTarpTile,palletCompressedCardboard,palletEmpty,palletEmptyStack"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+		</block>
+
+		<block name="Expanded_Technology">
+			<property name="Extends" value="controlPanelTop05"/>
+			<property name="CustomIcon" value="controlPanelTop05"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="metalFurnitureBlockVariantHelperDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="controlPanelTop05,controlPanelBase01,controlPanelBase02,controlPanelBase03,controlPanelBase04,controlPanelBase05,controlPanelBase06,controlPanelTop01,controlPanelTop02,controlPanelTop03,controlPanelTop04,controlPanelTop06,controlPanelTop07,controlPanelCorner,controlPanelBase07,controlPanelBase08,airConditioner,airConditionVentFan,airConditionVentFanDouble,satelliteDish,satelliteDishSmall,xRayDisplayLight1,xRayDisplayLight2,hospitalBed,gurneyBed"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+		</block>
+
+
+		<!-- ********** Extended Light Blocks ********** -->
 
 		<block name="Shop Sign Open">
 			<property name="Class" value="PoweredLight"/>
@@ -691,16 +717,6 @@ Here are some example xpath:
 			<property name="SelectAlternates" value="true" />
 			<property name="PlaceAltBlockValue" value="concreteHalfRampStairs50Filler,concreteHalfCentered,concreteHalfRampStairs50,concreteHalfCNRInside2,concreteGable1m,concreteWedgeInclineCornerTop,concreteWedgeNarrowTip,concreteWedgeNarrowLow,concreteWedgeNarrowMid,concreteWedgeNarrowHigh,concretePyramid1m,concreteTunnelCorner,concreteTunnelCenter,concreteTubeCenter,concreteTubeCorner,concreteWindowArch3MCNR,concreteWindowArch3MCTR,concreteWindowArch3MTip,concreteBarrier1,concreteBarrier2,concreteBarrier3,concreteBlockBaseboard1,concreteBlockBaseboard4,concreteBlockBaseboardChairRail1,concreteBlockBaseboardChairRail4,cinderBlocks01,cinderBlocks02,cinderBlocks03,sidewalkCurb,sidewalkCNRCurb,concreteDestroyed01,concreteDestroyed02,concreteDestroyed03,concreteDestroyed04,concreteDestroyed05,concreteDestroyed06,concreteDestroyed07"/>
 		</block>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-</append>
 
+	</append>
 </configs>

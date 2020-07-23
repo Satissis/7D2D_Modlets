@@ -1,0 +1,7 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text
+EDV_tableSawSchematic,blocks,Workstation,,,Table Saw Schematic,
+EDV_tableSawTip,Journal Tip,,,x,Use the table saw to unlock and craft a multitude of cosmetic recipes to customize and decorate your base.,
+EDV_tableSawTip_title,Journal Tip,,,x,Table Saw,
+EDV_tableSaw,blocks,Workstation,,,Table Saw,
+EDV_tableSawDesc,blocks,Workstation,,,"Create furniture, advanced shapes and decorations for your base.",
+

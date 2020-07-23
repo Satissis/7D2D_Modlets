@@ -20,39 +20,49 @@ Here are some example xpath:
 	
 -->
 <configs>
-	<append xpath="/recipes" >	
+	<append xpath="/recipes" >
 
-	<recipe name="Expanded_KitchenFurniture" count="1" craft_area="workbench">
-		<ingredient name="resourceForgedIron" count="3"/>
-		<ingredient name="resourceElectricParts" count="3"/>
-		<ingredient name="resourceMechanicalParts" count="1"/>
-		<ingredient name="casinoCoin" count="100"/>
-	</recipe>
-	
-	<recipe name="Expanded_HomeFurniture" count="1" craft_area="workbench">
-		<ingredient name="resourceForgedIron" count="3"/>
-		<ingredient name="resourceWood" count="10"/>
-		<ingredient name="resourceScrapPolymers" count="3"/>
-		<ingredient name="casinoCoin" count="100"/>
-	</recipe>
-	
-		<recipe name="Expanded_Construction" count="1" craft_area="workbench">
-		<ingredient name="resourceForgedIron" count="3"/>
-		<ingredient name="resourceScrapPolymers" count="3"/>
-		<ingredient name="resourceWood" count="10"/>
-		<ingredient name="resourceRockSmall" count="10"/>
-		<ingredient name="casinoCoin" count="100"/>
-	</recipe>
-	
-		<recipe name="Expanded_Technology" count="1" craft_area="workbench">
-		<ingredient name="resourceForgedIron" count="5"/>
-		<ingredient name="resourceScrapPolymers" count="5"/>
-		<ingredient name="resourceMechanicalParts" count="1"/>
-		<ingredient name="resourceElectricParts" count="5"/>
-		<ingredient name="casinoCoin" count="200"/>
-	</recipe>
-	
-	<!-- ********** Expanded_Lights Helper Recipe ********** -->
+		<!-- ********** Table Saw to craft new block in ********** -->
+		<!--recipe name="EDV_tableSaw" count="1" craft_area="workbench" tags="learnable,workbenchCrafting"-->
+		<recipe name="EDV_tableSaw" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="25"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceSpring" count="4"/>
+		</recipe>
+
+		<!-- ********** Expanded Helper Recipe ********** -->
+		<recipe name="Expanded_KitchenFurniture" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="casinoCoin" count="100"/>
+		</recipe>
+
+		<recipe name="Expanded_HomeFurniture" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="3"/>
+			<ingredient name="casinoCoin" count="100"/>
+		</recipe>
+
+			<recipe name="Expanded_Construction" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceScrapPolymers" count="3"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceRockSmall" count="10"/>
+			<ingredient name="casinoCoin" count="100"/>
+		</recipe>
+
+			<recipe name="Expanded_Technology" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+			<ingredient name="casinoCoin" count="200"/>
+		</recipe>
+
+		<!-- ********** Expanded_Lights Helper Recipe ********** -->
 
 		<recipe name="Expanded_Lights" count="1" craft_area="workbench" tags="workbenchCrafting,perkAdvancedEngineering">
 			<ingredient name="resourceForgedIron" count="5"/>
@@ -64,7 +74,7 @@ Here are some example xpath:
 			</effect_group>
 		</recipe>
 
-			<!-- ********** Expanded_Doors & Trims Helper Recipe ********** -->
+		<!-- ********** Expanded_Doors & Trims Helper Recipe ********** -->
 
 		<recipe name="Expanded_Doors" count="1" craft_area="workbench">
 			<ingredient name="resourceForgedIron" count="2"/>
@@ -74,11 +84,11 @@ Here are some example xpath:
 		</recipe>
 
 		
-			<!-- ****************************************************** -->
+		<!-- ****************************************************** -->
 		<!-- ********** General Helper Recipes ********** -->
 		<!-- ****************************************************** -->
 
-		<recipe name="Expanded_Wood_Blocks" count="1" craft_area="tablesaw">
+		<recipe name="Expanded_Wood_Blocks" count="1" craft_area="edvtablesaw">
 			<ingredient name="resourceWood" count="10"/>
 		</recipe>
 
@@ -106,10 +116,7 @@ Here are some example xpath:
 		<recipe name="Expanded_Concrete_Blocks" count="1" craft_area="workbench">
 			<ingredient name="pouredConcreteBlockVariantHelper" count="1"/>
 		</recipe>
-		
-		
-		
-		
+
 	</append>
 
 </configs>
