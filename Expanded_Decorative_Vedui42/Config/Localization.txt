@@ -14,7 +14,7 @@ Expanded_LightsVariantHelperDesc,blocks,Variant,,,"Craft various light fixtures 
 Expanded_DoorsVariantHelper,blocks,Variant,,,"Doors",
 Expanded_DoorsVariantHelperDesc,blocks,Variant,,,"Craft various door items with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the radial menu. Click or Shift-Click to select a variant to build with.",
 Expanded_woodFrameBlockVariantHelper,blocks,Variant,,,"Wood Frame Block (Expanded)",
-Expanded_woodFrameBlockVariantHelperDesc,blocks,Variant,,,"Also contains all the default wood frame blocks.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the radial menu. Click or Shift-Click to select a variant to build with.",
+Expanded_woodFrameBlockVariantHelperDesc,blocks,Variant,,,"Put the crafted block on your hotbar, hold the Reload action and select the Shape entry from the radial menu. Click or Shift-Click to select a variant to build with.\nAlso contains all the default wood frame blocks.",
 Expanded_woodDecorBlockVariantHelper,blocks,Variant,,,"Wood Decorative Blocks",
 Expanded_woodDecorBlockVariantHelperDesc,blocks,Variant,,,"Craft various wood decorative items with this helper block.\nPut the crafted block on your hotbar, hold the Reload action and select the Shape entry from the radial menu. Click or Shift-Click to select a variant to build with.",
 Expanded_signShopOpen,blocks,Sign,,,Shop Sign: Open,

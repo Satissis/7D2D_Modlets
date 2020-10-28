@@ -67,7 +67,7 @@ Here are some example xpath:
 			<property name="DescriptionKey" value="Expanded_KitchenFurnitureVariantHelperDesc"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
 			<property name="SelectAlternates" value="true" />
-			<property name="PlaceAltBlockValue" value="cntRetroFridgeVer1Closed,cntFridgeStainlessSteel,cntIceMachine,utilitySink,wallHungSink,cntWashingMachine,cntWasherClosed,cntDryerClosed,cntLaundryBasketVer1Empty,cntTrashCompactor,cntGasGrillOpen,cntCharcoalGrillOpen,cntWoodBurningStove,cntMicrowaveOvenVer1Open,cntToaster,cntCoffeeMaker,cntCoffeeMakerCommercial,cntTiltTruckEmpty,cntSodaFountain,cntWallOven,cntGraniteSink"/>
+			<property name="PlaceAltBlockValue" value="cntRetroFridgeVer1Closed,cntFridgeStainlessSteel,cntIceMachine,wallHungSink,cntWashingMachine,cntWasherClosed,cntDryerClosed,cntLaundryBasketVer1Empty,cntTrashCompactor,cntGasGrillOpen,cntCharcoalGrillOpen,cntWoodBurningStove,cntMicrowaveOvenVer1Open,cntToaster,cntCoffeeMaker,cntCoffeeMakerCommercial,cntTiltTruckEmpty,cntSodaFountain,cntWallOven"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
 		</block>
 
@@ -78,7 +78,7 @@ Here are some example xpath:
 			<property name="DescriptionKey" value="Expanded_HomeFurnitureVariantHelperDesc"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
 			<property name="SelectAlternates" value="true" />
-			<property name="PlaceAltBlockValue" value="decoPoolTable,cntMedicineCabinetClosed,schoolDesk,decoStationaryBike,decoTreadmill,decoBasketBallHoop,decoSwingSet,decoMetalSlide,decoLargePetCage,decoReptileTerrarium,gurneyBed,hospitalBed,decoComputerDeskTopPC,decoComputerMonitorKeyboardMousePC,decoComputerMonitorKeyboardMouse,decoComputerMonitor,decoBenchPress,decoWeightBar,decoClawFootBathTub,cntBathTubEmpty,cntRollingToolBoxClosed,cntToolBoxClosed,cntUtilityCartFull,cntJanitorCartFull,cntSuitcase,cntLuggageMediumClosed,chandelierLight,candelabraLight,cntCupboardCabinetRedTopClosed,cntLaundryBasketVer2Full,barracksChair,cntWaterCoolerFull,cntWaterCoolerBottle"/>
+			<property name="PlaceAltBlockValue" value="decoPoolTable,cntMedicineCabinetClosed,schoolDesk,decoStationaryBike,decoTreadmill,decoBasketBallHoop,decoSwingSet,decoMetalSlide,decoLargePetCage,decoReptileTerrarium,gurneyBed,hospitalBed,decoComputerDeskTopPC,decoComputerMonitorKeyboardMousePC,decoComputerMonitorKeyboardMouse,decoComputerMonitor,decoBenchPress,decoWeightBar,decoClawFootBathTub,cntBathTubEmpty,cntRollingToolBoxClosed,cntToolBoxClosed,cntUtilityCartFull,cntJanitorCartFull,cntSuitcase,cntLuggageMediumClosed,chandelierLight,candelabraLight,cntLaundryBasketVer2Full,barracksChair,cntWaterCoolerFull,cntWaterCoolerBottle"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
 		</block>
 
@@ -89,7 +89,7 @@ Here are some example xpath:
 			<property name="DescriptionKey" value="Expanded_ConstructionVariantHelperDesc"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
 			<property name="SelectAlternates" value="true" />
-			<property name="PlaceAltBlockValue" value="cntGasPump,heatVent,heatVentIndustrial,birdBathPlanter,decoHoistChain,decoHoistSpreader,decoHoistHook,decoHoistMagnet,decoHoistTopMount,decoHandTruck,palletWhiteBagsBase,palletWhiteBagsTile,palletWhiteBagsTop,palletWhiteBagsPartial1,palletWhiteBagsPartial2,palletWhiteBagsLoose,palletBrownBoxesBase,palletBrownBoxesTile,palletBrownBoxesTop,palletBrownBoxesLoose,palletBricksBase,palletBricksTile,palletBricksTop,palletBricksPartial1,palletBricksPartial2,palletBricksLoose,palletBlueTarpBase,palletBlueTarpTile,palletCompressedCardboard,palletEmpty,palletEmptyStack"/>
+			<property name="PlaceAltBlockValue" value="cntGasPump,heatVentIndustrial,birdBathPlanter,decoHoistChain,decoHoistSpreader,decoHoistHook,decoHoistMagnet,decoHoistTopMount,decoHandTruck,palletWhiteBagsBase,palletWhiteBagsTile,palletWhiteBagsTop,palletWhiteBagsPartial1,palletWhiteBagsPartial2,palletWhiteBagsLoose,palletBrownBoxesBase,palletBrownBoxesTile,palletBrownBoxesTop,palletBrownBoxesLoose,palletBricksBase,palletBricksTile,palletBricksTop,palletBricksPartial1,palletBricksPartial2,palletBricksLoose,palletBlueTarpBase,palletBlueTarpTile,palletCompressedCardboard,palletEmpty,palletEmptyStack"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
 		</block>
 
@@ -670,11 +670,13 @@ Here are some example xpath:
 			<property name="CustomIcon" value="doorTrim2m"/>
 			<drop event="Destroy" name="Expanded_DoorsVariantHelper" count="1" tag="allHarvest"/>
 		</block>
+
 		<block name="Expanded_doorTrim1m">
 			<property name="Extends" value="doorTrim1m"/>
 			<property name="CustomIcon" value="doorTrim1m"/>
 			<drop event="Destroy" name="Expanded_DoorsVariantHelper" count="1" tag="allHarvest"/>
 		</block>
+
 		<block name="Expanded_doorTrimHalfm">
 			<property name="Extends" value="doorTrimHalfm"/>
 			<property name="CustomIcon" value="doorTrimHalfm"/>
@@ -737,7 +739,7 @@ Here are some example xpath:
 			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
 			<property name="SelectAlternates" value="true" />
-			<property name="PlaceAltBlockValue" value="corrugatedMetalHalfRampStairs50Filler,corrugatedMetalWedgeTipHalf1,corrugatedMetalWedgeTipHalf2,corrugatedMetalInclineTipHalf1,corrugatedMetalInclineTipHalf2,corrugatedMetalCNRIncline,corrugatedMetalRampInclineHalf1,corrugatedMetalRampInclineHalf2,corrugatedMetalRampInclineInsideCNR,corrugatedMetalRampInclineInsideCNRFiller,corrugatedRampInclineFiller,corrugatedMetalRampInclineFillerHalf1,corrugatedMetalRampInclineFillerHalf2,corrugatedMetalGable,corrugatedMetalGableHalf,corrugatedMetalGableQuarterHalf,corrugatedMetalGable1m,corrugatedMetalGable1mHalf,corrugatedMetalGable3QuarterHalf,corrugatedMetalGableInvertedRampHalf,corrugatedMetalGableInvertedQuarterHalf,corrugatedMetalWedgeNarrowTip,corrugatedMetalWedgeNarrowLow,corrugatedMetalWedgeNarrowMid,corrugatedMetalWedgeNarrowHigh,corrugatedMetalTunnelCorner,corrugatedMetalTunnelCenter,corrugatedMetalTubeCenter,corrugatedMetalTubeCorner,rebarDestroyed,iBeamBent,scrapMetalPile"/>
+			<property name="PlaceAltBlockValue" value="corrugatedMetalHalfRampStairs50Filler,corrugatedMetalWedgeTipHalf1,corrugatedMetalWedgeTipHalf2,corrugatedMetalInclineTipHalf1,corrugatedMetalInclineTipHalf2,corrugatedMetalCNRIncline,corrugatedMetalRampInclineHalf1,corrugatedMetalRampInclineHalf2,corrugatedMetalRampInclineInsideCNR,corrugatedMetalRampInclineInsideCNRFiller,corrugatedRampInclineFiller,corrugatedMetalRampInclineFillerHalf1,corrugatedMetalRampInclineFillerHalf2,corrugatedMetalGable,corrugatedMetalGableHalf,corrugatedMetalGableQuarterHalf,corrugatedMetalGable1m,corrugatedMetalGable1mHalf,corrugatedMetalGable3QuarterHalf,corrugatedMetalGableInvertedRampHalf,corrugatedMetalGableInvertedQuarterHalf,corrugatedMetalWedgeNarrowTip,corrugatedMetalWedgeNarrowLow,corrugatedMetalWedgeNarrowMid,corrugatedMetalWedgeNarrowHigh,corrugatedMetalTunnelCorner,corrugatedMetalTunnelCenter,corrugatedMetalTubeCenter,corrugatedMetalTubeCorner,rebarDestroyed,scrapMetalPile"/>
 		</block>
 
 		<block name="Expanded_Concrete_Blocks"> <!-- TODO: Check and update with new blocks + add to localization file -->
